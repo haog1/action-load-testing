@@ -1,0 +1,13 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clean for Build
+        run: |
+          ./run.sh
