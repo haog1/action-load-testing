@@ -12,5 +12,7 @@ jobs:
     steps:
       - name: test
         run: |
+          cd ../../
+          chmod +x run.sh
           ./run.sh
     
