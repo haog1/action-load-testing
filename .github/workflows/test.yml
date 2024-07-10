@@ -3,11 +3,14 @@ name: Test
 on:
   push:
     branches:
-      - main
+    - main
 
 jobs:
-    runs-on: ubuntu-latest
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu
     steps:
-      - name: Clean for Build
+      - name: test
         run: |
           ./run.sh
+    
